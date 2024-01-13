@@ -6,13 +6,6 @@ const bodyParser = require("body-parser");
 
 const server = express();
 
-// server.use(
-//   cors({
-//     origin: ["https://hello-two-ten.vercel.app/"],
-//     methods: ["POST"],
-//     credentials: true,
-//   })
-// );
 server.use(cors());
 server.use(bodyParser.json());
 
@@ -41,4 +34,4 @@ const image = mongoose.model("image", imageSchema);
 
 server.post("/upload", createProduct);
 
-server.listen(3000);
+server.listen(8084);
