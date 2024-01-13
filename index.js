@@ -41,4 +41,4 @@ const image = mongoose.model("image", imageSchema);
 
 server.post("/upload", createProduct);
 
-server.listen(8084);
+server.listen(3000);
